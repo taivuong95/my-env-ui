@@ -3,52 +3,53 @@
       justify-content: center;
       align-items: center;
       height: 40%;
+      &__block{
+        display: flex;
+        justify-content: center;
+      }
+      &__icon--cloud{
+        width: 8rem;
+        height: 8rem;
+        background-size: contain;
+        background-image: url(../../assets/img/cloud.svg);
+      }
+      &__info{
+        margin-left: 3rem;
+        display: flex;
+        flex: 1 1;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 8rem;
+        width: 18rem;
+
+        &--weather{
+          font-size: 3rem;
+        }
+        &--status{
+          display: flex;
+          justify-content: space-between;
+          font-size: 2rem;
+        }
+        &--temp-status{
+          &::before{
+            display: inline-block;
+            content: "";
+            background-image: url(../../assets/img/temp.svg);
+            background-size: contain;
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+        &--humid-status{
+          &::before{
+            display: inline-block;
+            content: "";
+            background-image: url(../../assets/img/humid.svg);
+            background-size: contain;
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
   }
   
-  .weather-detail__block{
-    display: flex;
-    justify-content: center;
-  }
-  
-  .weather-detail__icon--cloud{
-    width: 8rem;
-    height: 8rem;
-    background-size: contain;
-    background-image: url(../../assets/img/cloud.svg);
-  }
-  
-  .weather-detail__info{
-    margin-left: 3rem;
-    display: flex;
-    flex: 1 1;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 8rem;
-    width: 18rem;
-  }
-  
-  .weather-detail__info--weather{
-    font-size: 3rem;
-  }
-  .weather-detail__info--status{
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-  }
-  
-  .weather-detail__info--temp-status::before{
-    display: inline-block;
-    content: "";
-    background-image: url(../../assets/img/temp.svg);
-    background-size: contain;
-    width: 2rem;
-    height: 2rem;
-  }
-  .weather-detail__info--humid-status::before{
-    display: inline-block;
-    content: "";
-    background-image: url(../../assets/img/humid.svg);
-    background-size: contain;
-    width: 2rem;
-    height: 2rem;
-  }

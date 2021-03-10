@@ -2,16 +2,19 @@ import "./App.css";
 import Navigation from './components/Navigation/Navigation';
 import WeatherDetail from './components/WeatherDetail/WeatherDetail';
 import WeatherInfo from './components/WeatherInfo/WeatherInfo';
+import TideSunChart from './components/TideSunChart/TideSunChart';
 function App() {
   return (
     <div className='container'>
       <div className='current-weather-layout'>
-        <Navigation/>
-        <WeatherDetail/>
-        <WeatherInfo/>
+        <Navigation />
+        <WeatherDetail />
+        <WeatherInfo />
       </div>
 
-      <div className='chart-layout'></div>
+      <div className='chart-layout'>
+        // <TideSunChart />
+      </div>
     </div>
   );
 }
