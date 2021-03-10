@@ -1,0 +1,74 @@
+.weather-info-layout{
+    display: flex;
+  }
+  
+  .weather-info__item{
+    display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 12rem;
+      padding: 1rem 0;
+  }
+  
+  .weather-info__item:not(:last-of-type){
+    border-right: 2px solid #fff;
+  }
+  .weather-info__item:last-child{
+    justify-content: space-around;
+  }
+  
+  .weather-info__item--title{
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  
+  .weather-info__item--number{
+    font-size: 2.4rem;
+    padding: 8px 8px 8px 15px;
+    background: #32a848;
+    border-radius: 4px;
+    width: 6rem;
+    height: 5rem;
+  }
+  .weather-info__item--number-nobg{
+    font-size: 3rem;
+  }
+  .weather-info__item--review{
+    font-size: 1.6rem;
+  }
+  
+  .weather-info__item--circle{
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    background-color: #94d6f7;
+  }
+  
+  .weather-info__add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #333;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+  .weather-info__add-btn::before{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/img/add.svg);
+    background-size: contain;
+    content: "";
+  }
+  
+  .weather-info__add-txt{
+    color: #333;
+    font-weight: 500;
+    font-size: 20px;
+  }
