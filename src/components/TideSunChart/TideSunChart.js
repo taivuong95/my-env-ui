@@ -1,6 +1,7 @@
 import React from "react";
 import {
     ComposedChart,
+    ResponsiveContainer,
     Line,
     Area,
     XAxis,
@@ -87,29 +88,30 @@ const TideSunChart = () => {
         return <MoonSVG cx={cx} cy={cy} />
     };
     return (
-        <ComposedChart
-            width={1200} height={350}
-            data={data}
-            margin={{
-                top: 20,
-                right: 20,
-                bottom: 20,
-                left: 20,
-            }}
-        >
-            <CartesianGrid stroke='#f5f5f5' />
-            <XAxis dataKey='name' />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Area type='monotone' dataKey='tide' stroke='#8884d8' />
-            <Line
-                type='monotone'
-                dataKey='sun'
-                stroke='#ff7300'
-                dot={<CustomizedDot />}
-            />
-        </ComposedChart>
+        <ResponsiveContainer width={1200} height={350}>
+            <ComposedChart
+                data={data}
+                margin={{
+                    top: 20,
+                    right: 20,
+                    bottom: 20,
+                    left: 20,
+                }}
+            >
+                <CartesianGrid stroke='#f5f5f5' />
+                <XAxis dataKey='name' />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Area type='monotone' dataKey='tide' stroke='#8884d8' />
+                <Line
+                    type='monotone'
+                    dataKey='sun'
+                    stroke='#ff7300'
+                    dot={<CustomizedDot />}
+                />
+            </ComposedChart>
+        </ResponsiveContainer>
     );
 };
 
