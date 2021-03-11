@@ -6,14 +6,14 @@ import TideSunChart from './components/TideSunChart/TideSunChart';
 function App() {
   return (
     <div className='container'>
-      <div className='current-weather-layout'>
+      <div className={`${window.innerWidth < 400 ? 'current-weather-layout': 'current-weather-layout respond'}`}>
         <Navigation />
         <WeatherDetail />
         <WeatherInfo />
       </div>
 
       <div className='chart-layout'>
-        // <TideSunChart />
+         <TideSunChart />
       </div>
     </div>
   );
