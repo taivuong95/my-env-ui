@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import "./App.css";
 import Navigation from './components/Navigation/Navigation';
 import WeatherDetail from './components/WeatherDetail/WeatherDetail';
 import WeatherInfo from './components/WeatherInfo/WeatherInfo';

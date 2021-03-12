@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    background: linear-gradient(180deg
-,rgba(50,94,189,.913603),rgba(25,107,138,.779149) 60%,rgba(0,172,255,.319765));
+    background: $color-gradient;
 }
 
 .current-weather-layout{
@@ -12,6 +11,12 @@
   display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include respond(largeTablet) {
+      overflow-y: scroll;
+    }
+    @include respond(tablet) {
+      overflow-y: scroll;
+    }
     
 }
 
@@ -19,7 +24,7 @@
   position: relative;
   overflow-y: auto;
   height: 40%;
-  background-color: #fff;
+  background-color: $color-white;
   display: flex;
   justify-content:center;
 }

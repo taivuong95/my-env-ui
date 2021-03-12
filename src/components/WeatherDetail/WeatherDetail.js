@@ -1,12 +1,10 @@
 import React, { useContext } from 'react';
-import './WeatherDetail.scss';
 
 import Context from '../../contexts/Context';
 import Loader from '../UI/Loader';
 
 const WeatherDetail = () => {
   const { weather, loading } = useContext(Context);
-  console.log(weather);
   return (
     <>
       {loading ? <Loader /> : <div className='weather-detail'>
