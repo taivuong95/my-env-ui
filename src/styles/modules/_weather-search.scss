@@ -13,7 +13,7 @@
     &__input {
       display: inline-block;
       border: solid 2px transparent;
-      background-color: rgba(#fff, 0.1);
+      background-color: rgba($color-white, 0.1);
       padding: 0.5rem 3rem;
       border-radius: 2px;
       margin-right: 2rem;
@@ -22,7 +22,7 @@
   
       &:focus {
         outline: none;
-        border-bottom: solid 2px #fff;
+        border-bottom: solid 2px $color-white;
       }
     }
   
@@ -40,7 +40,7 @@
   
     &__button {
       padding: 1.2rem;
-      color: #fff;
+      color: $color-white;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -56,14 +56,14 @@
   }
 
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #fff;
+    color: $color-white;
     opacity: 1; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #fff;
+    color: $color-white;
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #fff;
+    color: $color-white;
   }

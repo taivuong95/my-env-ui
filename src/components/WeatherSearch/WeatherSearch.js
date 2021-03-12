@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import './WeatherSearch.scss';
 import Context from '../../contexts/Context'
 import Loader from '../UI/Loader';
 
