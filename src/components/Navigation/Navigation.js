@@ -1,7 +1,7 @@
 import React from 'react';
 const Navigation = () => {
   return (
-    <div className='nav-bar'>
+    <div data-test="nav-bar" className='nav-bar'>
       <div className='nav-bar__button--burger'>
         <span></span>
         <span></span>
