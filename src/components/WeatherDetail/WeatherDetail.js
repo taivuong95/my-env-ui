@@ -7,9 +7,8 @@ const WeatherDetail = () => {
   const { weather, loading } = useContext(Context);
   return (
     <>
-      {loading ? <Loader /> : <div className='weather-detail'>
+      {loading ? <Loader /> : <div data-test="weather-detail" className='weather-detail'>
         <div className='weather-detail__block'>
-          {/*<div className='weather-detail__icon--cloud'></div>*/}
           <img alt="icon" src={`http://openweathermap.org/img/wn/${weather?.weather[0]?.icon}@2x.png`} />
           <div className='weather-detail__info'>
             <div className='weather-detail__info--weather'>{weather?.weather[0]?.main}</div>

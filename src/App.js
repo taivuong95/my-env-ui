@@ -23,6 +23,7 @@ function App() {
       setWeather(null);
       return setError("Please enter the name of the city.");
     }
+    e.target.elements.location.value = "";
     try {
       const request = getWeatherData(location)
       const { data } = await request;
