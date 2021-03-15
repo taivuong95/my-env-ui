@@ -2,7 +2,7 @@ import React from 'react';
 
 const WeatherInfo = () => {
   return (
-    <div className='weather-info-layout'>
+    <div data-test="weather-info-layout" className='weather-info-layout'>
       <div className='weather-info__item'>
         <div className='weather-info__item--title'>PSI</div>
         <div className='weather-info__item--number'>23</div>

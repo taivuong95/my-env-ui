@@ -5,10 +5,10 @@ import Loader from '../UI/Loader';
 const WeatherSearch = () => {
     const { getWeatherInfo, city, loading } = useContext(Context)
     return (
-        <div className="weather-search">
+        <div data-test="weather-search" className="weather-search">
             {loading ? <Loader /> : <div className="weather-search--city">{city || 'Please enter the name of the city to get started!'}</div>}
-            <form onSubmit={getWeatherInfo} className="weather-search__form" >
-                <input name="location" placeholder="Type the city" autoComplete="off" className="weather-search__input" type="text" />
+            <form data-test="weather-search__form" onSubmit={getWeatherInfo} className="weather-search__form" >
+                <input data-test="city"  name="location" placeholder="Type the city" autoComplete="off" className="weather-search__input" type="text" />
                 <div className="weather-search__submit">
                     <button className="weather-search__button">&rarr;</button>
                 </div>

@@ -40,7 +40,7 @@ function App() {
 
   }, [])
   return (
-    <div className='container'>
+    <div data-test="container" className='container'>
       <Context.Provider value={{ getWeatherInfo, weather, city, loading }}>
         <div className='current-weather-layout'>
           <Navigation />
