@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation Component expect to render Navigation component 1`] = `
+<div
+  className="nav-bar"
+  data-test="nav-bar"
+>
+  <div
+    className="nav-bar__button--burger"
+  >
+    <span />
+    <span />
+    <span />
+  </div>
+  <div
+    className="nav-bar__location"
+  >
+    <div
+      className="nav-bar__location--app-name"
+    >
+      myENV
+    </div>
+    <div
+      className="nav-bar__location--dropdown"
+    >
+      <span>
+        Current Location
+      </span>
+      <span
+        className="nav-bar__location--dropdown--icon"
+      />
+    </div>
+  </div>
+  <div
+    className="nav-bar__notification"
+  />
+</div>
+`;

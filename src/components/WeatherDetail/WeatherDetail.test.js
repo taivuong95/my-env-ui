@@ -1,9 +1,10 @@
 import React from 'react';
-import WeatherDetail from '../components/WeatherDetail/WeatherDetail';
+import WeatherDetail from './WeatherDetail';
 import { shallow, mount } from 'enzyme';
-import { findByTestAttr } from '../utils/index';
-import Context from '../contexts/Context';
-import Loader from '../components/UI/Loader';
+import toJson from 'enzyme-to-json';
+import { findByTestAttr } from '../../utils/index';
+import Context from '../../contexts/Context';
+import Loader from '../UI/Loader';
 
 const value = {
     getWeatherInfo: jest.fn(),
@@ -11,6 +12,10 @@ const value = {
 }
 
 describe('WeatherDetail Component', () => {
+    test("expect to render WeatherDetail component", () => {
+        const wrapper = mount(<Context.Provider value={value}><WeatherDetail /> </Context.Provider>);
+        expect(toJson(wrapper)).toMatchSnapshot();
+    })
     test('renders without error', () => {
         const wrapper = mount(<Context.Provider value={value}><WeatherDetail /> </Context.Provider>)
         const weatherDetailComponent = findByTestAttr(wrapper, "weather-detail");

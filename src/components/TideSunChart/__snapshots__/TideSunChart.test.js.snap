@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TideSunChart Component expect to render Navigation component 1`] = `
+<Fragment>
+  <div
+    className="chart-title"
+  >
+     
+    <span
+      class="blue-title"
+    >
+      Tide
+    </span>
+    <span
+      class="orange-title"
+    >
+      Sunrise & Sunset
+    </span>
+  </div>
+  <ResponsiveContainer
+    data-test="chart"
+    debounce={0}
+    height={350}
+    width={1200}
+  >
+    <ComposedChart
+      barCategoryGap="10%"
+      barGap={4}
+      data={
+        Array [
+          Object {
+            "name": "6h",
+            "sun": 0,
+            "tide": 1400,
+          },
+          Object {
+            "name": "8h",
+            "sun": 3000,
+            "tide": 1506,
+          },
+          Object {
+            "name": "10h",
+            "sun": 4500,
+            "tide": 989,
+          },
+          Object {
+            "name": "12h",
+            "sun": 5000,
+            "tide": 1228,
+          },
+          Object {
+            "name": "14h",
+            "sun": 4500,
+            "tide": 1100,
+          },
+          Object {
+            "name": "16h",
+            "sun": 3000,
+            "tide": 1700,
+          },
+          Object {
+            "name": "18h",
+            "sun": 0,
+            "tide": 1400,
+          },
+          Object {
+            "name": "20h",
+            "sun": 868,
+            "tide": 1506,
+          },
+          Object {
+            "name": "22h",
+            "sun": 868,
+            "tide": 989,
+          },
+          Object {
+            "name": "0h",
+            "sun": 868,
+            "tide": 1228,
+          },
+          Object {
+            "name": "2h",
+            "sun": 868,
+            "tide": 1100,
+          },
+          Object {
+            "name": "4h",
+            "sun": 868,
+            "tide": 1700,
+          },
+          Object {
+            "name": "6h",
+            "sun": 868,
+            "tide": 1700,
+          },
+        ]
+      }
+      layout="horizontal"
+      margin={
+        Object {
+          "bottom": 20,
+          "left": 20,
+          "right": 20,
+          "top": 20,
+        }
+      }
+      reverseStackOrder={false}
+      stackOffset="none"
+      syncMethod="index"
+    >
+      <CartesianGrid
+        fill="none"
+        horizontal={true}
+        horizontalFill={Array []}
+        horizontalPoints={Array []}
+        stroke="#f5f5f5"
+        vertical={true}
+        verticalFill={Array []}
+        verticalPoints={Array []}
+      />
+      <XAxis
+        allowDataOverflow={false}
+        allowDecimals={true}
+        allowDuplicatedCategory={true}
+        dataKey="name"
+        domain={
+          Array [
+            0,
+            "auto",
+          ]
+        }
+        height={30}
+        hide={false}
+        mirror={false}
+        orientation="bottom"
+        padding={
+          Object {
+            "left": 0,
+            "right": 0,
+          }
+        }
+        reversed={false}
+        scale="auto"
+        tickCount={5}
+        type="category"
+        width={0}
+        xAxisId={0}
+      />
+      <YAxis
+        allowDataOverflow={false}
+        allowDecimals={true}
+        allowDuplicatedCategory={true}
+        domain={
+          Array [
+            0,
+            "auto",
+          ]
+        }
+        height={0}
+        hide={false}
+        mirror={false}
+        orientation="left"
+        padding={
+          Object {
+            "bottom": 0,
+            "top": 0,
+          }
+        }
+        reversed={false}
+        scale="auto"
+        tickCount={5}
+        type="number"
+        width={60}
+        yAxisId={0}
+      />
+      <Tooltip
+        active={false}
+        allowEscapeViewBox={
+          Object {
+            "x": false,
+            "y": false,
+          }
+        }
+        animationDuration={400}
+        animationEasing="ease"
+        contentStyle={Object {}}
+        coordinate={
+          Object {
+            "x": 0,
+            "y": 0,
+          }
+        }
+        cursor={true}
+        cursorStyle={Object {}}
+        filterNull={true}
+        isAnimationActive={true}
+        itemStyle={Object {}}
+        labelStyle={Object {}}
+        offset={10}
+        separator=" : "
+        trigger="hover"
+        useTranslate3d={false}
+        viewBox={
+          Object {
+            "x1": 0,
+            "x2": 0,
+            "y1": 0,
+            "y2": 0,
+          }
+        }
+        wrapperStyle={Object {}}
+      />
+      <Legend
+        align="center"
+        iconSize={14}
+        layout="horizontal"
+        verticalAlign="bottom"
+      />
+      <Area
+        activeDot={true}
+        animationBegin={0}
+        animationDuration={1500}
+        animationEasing="ease"
+        connectNulls={false}
+        dataKey="tide"
+        dot={false}
+        fill="#3182bd"
+        fillOpacity={0.6}
+        hide={false}
+        isAnimationActive={true}
+        legendType="line"
+        points={Array []}
+        stroke="#8884d8"
+        type="monotone"
+        xAxisId={0}
+        yAxisId={0}
+      />
+      <Line
+        activeDot={true}
+        animateNewValues={true}
+        animationBegin={0}
+        animationDuration={1500}
+        animationEasing="ease"
+        connectNulls={false}
+        dataKey="sun"
+        dot={<CustomizedDot />}
+        fill="#fff"
+        hide={false}
+        isAnimationActive={true}
+        legendType="line"
+        points={Array []}
+        stroke="#ff7300"
+        strokeWidth={1}
+        type="monotone"
+        xAxisId={0}
+        yAxisId={0}
+      />
+    </ComposedChart>
+  </ResponsiveContainer>
+</Fragment>
+`;

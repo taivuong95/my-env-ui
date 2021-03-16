@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherSearch Component expect to render WeatherSearch component 1`] = `
+Array [
+  <WeatherSearch>
+    <div
+      className="weather-search"
+      data-test="weather-search"
+    >
+      <Loader>
+        <div
+          className="loader"
+        />
+      </Loader>
+      <form
+        className="weather-search__form"
+        data-test="weather-search__form"
+        onSubmit={[MockFunction]}
+      >
+        <input
+          autoComplete="off"
+          className="weather-search__input"
+          data-test="city"
+          name="location"
+          placeholder="Type the city"
+          type="text"
+        />
+        <div
+          className="weather-search__submit"
+        >
+          <button
+            className="weather-search__button"
+          >
+            →
+          </button>
+        </div>
+      </form>
+    </div>
+  </WeatherSearch>,
+  " ",
+]
+`;

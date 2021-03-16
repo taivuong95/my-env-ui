@@ -1,10 +1,10 @@
 import axios from "axios";
-import { API_KEY, getWeatherData } from "../apis/index";
-import {mockData} from './mockData'
+import { API_KEY, getWeatherData } from "./index";
+import { mockData } from './mockData'
 jest.mock("axios");
 describe("fetchData", () => {
   test("fetches successfully data from API", async () => {
-    
+
     const resp = { mockData };
     axios.get.mockImplementationOnce(() => Promise.resolve(resp));
 

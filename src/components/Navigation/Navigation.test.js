@@ -1,7 +1,8 @@
 import React from 'react';
-import Navigation from '../components/Navigation/Navigation';
+import Navigation from './Navigation';
 import { shallow } from 'enzyme';
-import { findByTestAttr } from '../utils/index';
+import toJson from 'enzyme-to-json';
+import { findByTestAttr } from '../../utils/index';
 
 const setup = () => shallow(<Navigation />);
 describe('Navigation Component', () => {
@@ -9,5 +10,9 @@ describe('Navigation Component', () => {
         const wrapper = setup();
         const navComponent = findByTestAttr(wrapper, "nav-bar");
         expect(navComponent.length).toBe(1);
+    });
+    test("expect to render Navigation component", () => {
+        const wrapper = shallow(<Navigation />);
+        expect(toJson(wrapper)).toMatchSnapshot();
     })
-})
+});
