@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import WeatherDetail from './components/WeatherDetail/WeatherDetail';
 import WeatherInfo from './components/WeatherInfo/WeatherInfo';
@@ -14,12 +14,11 @@ function App() {
   const [error, setError] = useState();
   const [loading, setLoading] = useState();
 
-  const getWeatherInfo = async (e) => {
+  const setWeatherInfo = async (e) => {
     e.preventDefault();
     setLoading(true);
     const location = e.target.elements.location.value;
     if (!location) {
-      setLoading(true)
       setWeather(null);
       return setError("Please enter the name of the city.");
     }
@@ -37,12 +36,10 @@ function App() {
       setCity(null);
     }
   }
-  useEffect(() => {
-
-  }, [])
+ 
   return (
     <div data-test="container" className='container'>
-      <Context.Provider value={{ getWeatherInfo, weather, city, loading }}>
+      <Context.Provider value={{ setWeatherInfo, weather, city, loading }}>
         <div className='current-weather-layout'>
           <Navigation />
           <WeatherSearch />

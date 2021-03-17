@@ -1,13 +1,13 @@
 import React from 'react';
 import WeatherDetail from './WeatherDetail';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { findByTestAttr } from '../../utils/index';
 import Context from '../../contexts/Context';
 import Loader from '../UI/Loader';
 
 const value = {
-    getWeatherInfo: jest.fn(),
+    setWeatherInfo: jest.fn(),
     loading: true
 }
 

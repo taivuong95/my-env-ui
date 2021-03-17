@@ -7,7 +7,7 @@ import Context from '../../contexts/Context';
 import Loader from '../UI/Loader';
 
 const value = {
-    getWeatherInfo: jest.fn(),
+    setWeatherInfo: jest.fn(),
     city: 'Paris',
     loading: true
 }
