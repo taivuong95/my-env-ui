@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherDetail Component expect to render WeatherDetail component 1`] = `
+Array [
+  <WeatherDetail>
+    <Loader>
+      <div
+        className="loader"
+      />
+    </Loader>
+  </WeatherDetail>,
+  " ",
+]
+`;
