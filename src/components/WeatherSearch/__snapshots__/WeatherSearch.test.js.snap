@@ -30,6 +30,7 @@ Array [
         >
           <button
             className="weather-search__button"
+            data-test="submit-button"
           >
             →
           </button>

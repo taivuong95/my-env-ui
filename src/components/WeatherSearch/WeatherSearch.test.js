@@ -11,7 +11,6 @@ const value = {
     city: 'Paris',
     loading: true
 }
-
 describe('WeatherSearch Component', () => {
     test("expect to render WeatherSearch component", () => {
         const wrapper = mount(<Context.Provider value={value}><WeatherSearch /> </Context.Provider>);
@@ -26,5 +25,24 @@ describe('WeatherSearch Component', () => {
         const wrapper = mount(<Context.Provider value={value}><Loader /> </Context.Provider>)
         expect(wrapper.find(".loader").exists()).toBeTruthy();
     });
+
+    const setup = ({ setWeatherInfo = jest.fn(), city, loading }) => {
+        loading = loading || false;
+        city = city || 'Paris';
+
+        return mount(
+            <Context.Provider value={{ setWeatherInfo, city, loading }}>
+                <WeatherSearch />
+            </Context.Provider>
+        )
+    }
+    test('correctly render city', () => {
+        const wrapper = setup('Paris');
+        expect(wrapper.text()).toContain('Paris');
+    });
+    test('correctly render loading', () => {
+        const wrapper = setup(true);
+        expect(wrapper.contains(<Loader />));
+    })
 
 })

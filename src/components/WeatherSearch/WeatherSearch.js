@@ -8,9 +8,9 @@ const WeatherSearch = () => {
         <div data-test="weather-search" className="weather-search">
             {loading ? <Loader /> : <div className="weather-search--city">{city || 'Please enter the name of the city to get started!'}</div>}
             <form data-test="weather-search__form" onSubmit={setWeatherInfo} className="weather-search__form" >
-                <input data-test="city"  name="location" placeholder="Type the city" autoComplete="off" className="weather-search__input" type="text" />
+                <input data-test="city" name="location" placeholder="Type the city" autoComplete="off" className="weather-search__input" type="text" />
                 <div className="weather-search__submit">
-                    <button className="weather-search__button">&rarr;</button>
+                    <button data-test="submit-button" className="weather-search__button">&rarr;</button>
                 </div>
             </form>
         </div>

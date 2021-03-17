@@ -7,7 +7,7 @@ import Context from '../../contexts/Context';
 import Loader from '../UI/Loader';
 
 const value = {
-    setWeatherInfo: jest.fn(),
+    weather: {},
     loading: true
 }
 
@@ -25,5 +25,25 @@ describe('WeatherDetail Component', () => {
         const wrapper = mount(<Context.Provider value={value}><Loader /> </Context.Provider>)
         expect(wrapper.find(".loader").exists()).toBeTruthy();
     });
+
+    const setup = ({ weather, loading }) => {
+        loading = loading || false;
+
+        return mount(
+            <Context.Provider value={{ weather, loading }}>
+                <WeatherDetail />
+            </Context.Provider>
+        )
+    }
+
+    test('correctly render loading', () => {
+        const wrapper = setup(true);
+        expect(wrapper.contains(<Loader />));
+    });
+    // test('correctly render weather humidity', () => {
+    //     const wrapper = setup({});
+    //     const humid = findByTestAttr(wrapper, 'humidity');
+    //     expect(humid.text()).toBe('81');
+    // })
 
 })

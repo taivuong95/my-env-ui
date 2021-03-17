@@ -16,7 +16,7 @@ const WeatherDetail = () => {
               <span className='weather-detail__info--temp-status'>
                 {(weather?.main?.temp)} C
                 </span>
-              <span className='weather-detail__info--humid-status'>{weather?.main?.humidity}%</span>
+              <span data-test="humidity" className='weather-detail__info--humid-status'>{weather?.main?.humidity}%</span>
             </div>
           </div>
         </div>
