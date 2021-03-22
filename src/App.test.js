@@ -12,7 +12,7 @@ describe("App Component", () => {
   });
   test("renders without error", () => {
     const wrapper = setup();
-    const appComponent = findByTestAttr(wrapper, "container");
+    const appComponent = findByTestAttr(wrapper, "app");
     expect(appComponent.length).toBe(1);
   });
 });

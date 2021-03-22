@@ -2,31 +2,9 @@
 
 exports[`App Component expect to render App component 1`] = `
 <div
-  className="container"
-  data-test="container"
+  className="app"
+  data-test="app"
 >
-  <ContextProvider
-    value={
-      Object {
-        "city": undefined,
-        "loading": undefined,
-        "setWeatherInfo": [Function],
-        "weather": undefined,
-      }
-    }
-  >
-    <div
-      className="current-weather-layout"
-    >
-      <Navigation />
-      <WeatherSearch />
-      <WeatherInfo />
-    </div>
-    <div
-      className="chart-layout"
-    >
-      <TideSunChart />
-    </div>
-  </ContextProvider>
+  <HomePage />
 </div>
 `;
