@@ -2,7 +2,7 @@ import HomePage from "./pages/HomePage";
 function App() {
   return (
     <div className="app" data-test="app">
-    <HomePage/>
+      <HomePage />
     </div>
   );
 }
