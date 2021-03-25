@@ -1,10 +1,10 @@
 const initialState = {
     list: [],
     city: {
-        coord: { lon: 30.2905, lat: 59.9294 },
-        country: 'RU',
-        id: 519690,
-        name: 'Novaya Gollandiya'
+        coord: { lon: 106.6297, lat: 10.8231 },
+        country: 'VIE',
+        id: 1566083,
+        name: 'Ho Chi Minh'
     },
     request: false,
     error: null

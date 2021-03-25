@@ -1,7 +1,7 @@
 import axios from 'axios';
 import API from './API';
 
-const APP_ID = '9cc29ecca0f48e0f260928af174aaa33';
+const APP_ID = '093c63d1d6dd2f0f77c6f14d91a19042';
 
 class WeatherService {
     static getWeatherByPosition(requestParams, cancelToken) {

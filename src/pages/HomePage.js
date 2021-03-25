@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { getWeatherData } from '../apis';
 import Navigation from '../components/Navigation/Navigation';
 import TideSunChart from '../components/TideSunChart/TideSunChart';
@@ -36,7 +36,7 @@ const HomePage = () => {
       setCity(null);
     }
   }
- 
+
   return (
     <div data-test="container" className='container'>
       <Context.Provider value={{ setWeatherInfo, weather, city, loading }}>
